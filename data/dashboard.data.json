@@ -1,0 +1,28 @@
+{
+  "productivityData" : [
+  { "name": "Henry", "quantityPicked": 120, "expectedQtytoBePicked" :200,"image_url":"images/avatar.png" },
+  { "name": "Daniel", "quantityPicked": 113,"expectedQtytoBePicked" :200 ,"image_url":"images/avatar.png"},
+  { "name": "Thomas", "quantityPicked": 109,"expectedQtytoBePicked" :200 ,"image_url":"images/avatar.png"},
+  { "name": "Joseph", "quantityPicked": 107,"expectedQtytoBePicked" :200 ,"image_url":"images/avatar.png"},
+  { "name": "Samuel", "quantityPicked": 199,"expectedQtytoBePicked" :200 ,"image_url":"images/avatar.png"}
+],
+"odersTobePicked":  {
+  "pickInProgress":973,
+  "completlyPicked": 1328
+},
+"arnsData":{
+  "completed":250,
+  "inProgress":390,
+  "toBeRecived":801
+},
+"ordersData":
+    {
+      "unitTobeShipped": 1654,
+      "unitShipped":3500
+    },
+  "stockTransferData": {
+    "completed": 155,
+    "inProgress": 345,
+    "open": 611
+  }
+}
