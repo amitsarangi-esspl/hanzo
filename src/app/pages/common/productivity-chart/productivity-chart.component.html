@@ -1,0 +1,39 @@
+<div class="row mb-2 p-0 d-flex align-items-center" *ngFor="let item of productivityRecords;index as i">
+  <div class="col-2">
+    <div class="gold d-flex align-items-center">
+      <div class="col-3">
+        <div
+        [ngClass]="{'gold-color me-3 fw-medium': i === 0,'silver-color me-3 fw-medium': i === 1,'bronze-color me-3 fw-medium': i === 2, 'me-3 w-100 d-flex justify-content-center fw-medium' : i> 2 }"
+        >{{getProductivityPosition(i)}}</div>
+      </div>
+      <div
+      [ngClass]="getAvtarClass(i)"
+      >
+        <img [src]="item.image_url" alt="">
+        <div class="leaf-overlay position-absolute top-0 ">
+          @if (i==0){
+            <img src="images/gold.svg" alt="">
+          }
+          @else if (i==1) {
+            <img src="images/silver.svg" alt="">
+          }
+          @else if (i==2) {
+            <img src="images/bronze.svg" alt="">
+          }
+
+
+        </div>
+      </div>
+      <div class="name ms-2 fw-medium">{{item.name}}</div>
+  </div>
+  </div>
+  <div class="col-8">
+    <div class="progress" role="progressbar" aria-label="Productivity Dynamics" attr.aria-valuenow="{{calculatePercent( item.quantityPicked,item.expectedQtytoBePicked)}}" aria-valuemin="0" aria-valuemax="100">
+      <div [style.width.%]="calculatePercent( item.quantityPicked,item.expectedQtytoBePicked)" class="progress-bar"></div>
+      </div>
+  </div>
+  <div class="col-1">
+    <div class="quantity-amount d-flex justify-content-center">{{item.quantityPicked}}</div>
+  </div>
+</div>
+

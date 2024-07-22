@@ -1,0 +1,10 @@
+
+:host ::ng-deep{
+  .custom-height{
+    height: 300px;
+  }
+
+  #svgPieContainer{
+    width:100% !important;
+  }
+}

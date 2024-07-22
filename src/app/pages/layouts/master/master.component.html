@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <title>Sunbrella</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+	<div>
+	  <!--Header Starts-->
+      <app-header></app-header>
+	  <!--Header Ends-->
+	  <div class="container-fluid pt-5 mt-5">
+
+		<div class="d-flex">
+			<!--Left Menu Starts-->
+			  <app-menu></app-menu>
+			<!--Left Menu Ends-->
+			<!--Content Starts-->
+			<div class="col ms-1">
+        <ngx-spinner
+  [bdColor]="'rgba(255, 255, 255, 0.5)'"
+  [color]="'#00B23E'"
+  [size]="'default'"
+  [fullScreen]="true"
+
+>
+    <img class="page_loader" src="/images/loader_gif.gif"  alt="loader"/>
+</ngx-spinner>
+        <router-outlet></router-outlet>
+			</div>
+			<!--Content Ends-->
+		</div>
+	  </div>
+    </div>
+  </body>
+</html>
+
+
+

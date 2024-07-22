@@ -1,0 +1,81 @@
+
+  <div class="d-flex justify-content-between align-items-center">
+    <div><div class="text-start heading-2 mb-3" style="cursor: pointer;" (click)="redirectToDailyDashboard()">Historical</div></div>
+  </div>
+  <div class="d-flex justify-content-between">
+    <div class="col me-2">
+      <div class="grid-view-customer p-3">
+        <div class="d-flex justify-content-end">
+          <div class="d-flex align-items-center me-3 fw-medium">
+            <div class="mx-2"><span class="rounded-pill badge-legend todo"></span> ARN’s Received</div>
+            <div class="legend-separator"></div>
+            <div class="mx-2"><span class="rounded-pill badge-legend done"></span> Units Received</div>
+            <app-arn-chart></app-arn-chart>
+          </div>
+        </div>
+        <div class="mt-0">
+          <div class="heading-3">ARN's</div>
+        </div>
+      </div>
+    </div>
+    <div class="col ms-2">
+      <div class="grid-view-customer p-3">
+        <div class="d-flex justify-content-end">
+          <div class="d-flex align-items-center me-3 fw-medium">
+            <div class="mx-2"><span class="rounded-pill badge-legend todo"></span> Orders Shipped</div>
+            <div class="legend-separator"></div>
+            <div class="mx-2"><span class="rounded-pill badge-legend done"></span> Units Shipped</div>
+          </div>
+        </div>
+        <div class="mt-0">
+          <div class="heading-3">Order's</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-between mt-3">
+    <div class="col me-2">
+      <div class="grid-view-customer p-3">
+        <div class="mt-4">
+          <div class="heading-3">Errors</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-8 ms-2">
+      <div class="grid-view-customer p-3">
+        <div class="d-flex justify-content-end">
+          <div class="d-flex align-items-center me-3 fw-medium">
+            <div class="mx-2"><span class="rounded-pill badge-legend todo"></span> Stock Transfer</div>
+            <div class="legend-separator"></div>
+            <div class="mx-2"><span class="rounded-pill badge-legend done"></span> Inv Adjustment</div>
+            <div class="legend-separator"></div>
+            <div class="mx-2"><span class="rounded-pill badge-legend done"></span> Cycle Count</div>
+          </div>
+        </div>
+        <div class="mt-0">
+          <div class="heading-3">Inventory Statistics</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="d-flex justify-content-around mt-3">
+    <div class="col-8">
+      <div class="grid-view-customer p-3">
+        <div class="d-flex justify-content-end">
+          <div class="d-flex align-items-center me-3 fw-medium">
+            <div class="mx-2"><span class="rounded-pill badge-legend todo"></span> Count created</div>
+            <div class="legend-separator"></div>
+            <div class="mx-2"><span class="rounded-pill badge-legend done"></span> Discrepancy</div>
+            <div class="legend-separator"></div>
+            <div class="mx-2"><span class="rounded-pill badge-legend done"></span> Accuracy  Rate</div>
+          </div>
+        </div>
+        <div class="mt-0">
+          <div class="heading-3">Cycle Count</div>
+        </div>
+      </div>
+    </div>
+  </div>
