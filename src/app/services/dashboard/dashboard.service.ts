@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DashboardService {
-  private BASE_URL='/data/'
+  private BASE_URL='data/'
 
   constructor(private http: HttpClient) { }
 
